@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #faf7f0;
+    color: #17191c;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #faf7f0;
+    color: #17191c;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: #eef2f9;
+    color: #152546;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
