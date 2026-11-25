@@ -38,16 +38,31 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <footer className="no-print border-t border-parchment-200 bg-ivory/80 mt-16">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-500">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
                 <span className="font-serif text-base font-semibold text-navy-700">
                   Florilegio Clásico
                 </span>
                 <span>·</span>
                 <span>Citas clásicas con rigor filológico para tu obra</span>
               </div>
-              <p className="text-center sm:text-right">
-                Fuentes verificables con contexto original y guía de inserción
-              </p>
+
+              <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-end">
+                <a
+                  href="mailto:morispolanco@gmail.com"
+                  className="text-ink-700 hover:text-navy-700 hover:underline transition-colors"
+                >
+                  morispolanco@gmail.com
+                </a>
+                <span className="text-parchment-300">·</span>
+                <a
+                  href="https://github.com/morispolanco/florilegio-clasico/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink-700 hover:text-navy-700 hover:underline transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
           </footer>
         </AuthProvider>
